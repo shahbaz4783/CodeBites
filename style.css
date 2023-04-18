@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&family=Ubuntu&display=swap');
+
+.container {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+
+.dice {
+  text-align: center;
+  display: inline-block;
+
+}
+
+body {
+  background-color: #000000;
+}
+
+h1 {
+  margin: 30px;
+  font-family: Ubuntu, sans-serif;
+  font-size: 100px;
+  color: #4ECCA3;
+}
+
+p {
+  font-size: 2rem;
+  color: #c0d869;
+  font-family: 'Roboto', sans-serif;
+}
+
+img {
+  width: 80%;
+}
+
+.result {
+  font-size: 50px;
+  margin: 40px;
+  color: #EEEEEE;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+.btn{
+  display: block;
+  width: 180px;
+  height: 60px;
+  color: white;
+  margin: 20px auto;
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+  border-radius: 20px;
+  background-color: transparent;
+  border: 2px solid white;
+}
+
+.btn:hover{
+  background-color: rgb(3, 124, 142);
+  transition: all 0.2s ease-in;
+
+}
+
