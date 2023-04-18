@@ -11,7 +11,7 @@ document.querySelectorAll("img")[1].setAttribute("src", randomImg2);
 
 // Giving Action to Play Button
 document.querySelector(".btn").addEventListener("click", function () {
-    location.reload();
+    window.location.reload();
 })
 
 
