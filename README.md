@@ -12,7 +12,7 @@ CodeBites is a curated collection of small web development projects designed to 
 
 ## Getting Started
 
-To access and explore CodeBites, simply visit the following URL: [https://your-codebites-website.netlify.app](https://codebites.netlify.app)
+To access and explore CodeBites, simply visit the following URL: [Click Here to visit site](https://codebites.netlify.app)
 
 On the website, you will find a collection of small web development projects showcased in a visually appealing format. Each project includes buttons to view the live website and view the source code.
 
