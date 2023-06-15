@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 60vw;
+            margin: 50px auto;
+            padding: 20px 30px;
+            background-color: rgb(177, 201, 226);
+            box-shadow: 1px 1px 3px 1px green;
+            border-radius: 10px;
+        }
+
+        .form {
+            display: flex;
+            flex-direction: column;
+            padding: 40px;
+            margin: 30px;
+        }
+
+        .form p {
+            text-align: center;
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+
+        .container h1 {
+            text-align: center;
+        }
+
+        .btn {
+            margin: 30px auto;
+            width: 120px;
+            height: 40px;
+            background-color: aliceblue;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background-color: rgb(161, 215, 161);
+            transition: all 0.3s ease-in;
+        }
+
+        label {
+            text-align: center;
+            padding: 20px;
+        }
+
+        #birthday {
+            width: 215px;
+            height: 30px;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Age Calculator</h1>
+        <div class="form">
+            <label for="birthday">
+                Enter Your Date of Birth
+            </label>
+            <input type="date" id="birthday" name="birthday">
+            <button class="btn">Calculate Age</button>
+            <p id="result">
+                Your are 18 years old.
+            </p>
+        </div>
+    </div>
+
+
+    <script>
+
+function stringValue(s) {
+  let totalValue = 0;
+  for (let i = 0; i < s.length; i++) {
+
+    const char = s[i];
+    const value = char.charCodeAt(0) - 96;
+    
+    if (value >= 1 && value <= 26) {
+      totalValue += value;
+    }
+  }
+  return totalValue;
+}
+
+
+const s = "how much";
+const totalValue = stringValue(s);
+console.log(totalValue);
+
+    </script>
+</body>
+</html>
