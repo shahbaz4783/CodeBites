@@ -12,7 +12,7 @@ Techfolio is a curated collection web development projects designed to inspire a
 
 ## Getting Started
 
-To access and explore CodeBites, simply visit the following URL: [Click Here to visit site](https://techfolio.netlify.app)
+To access and explore CodeBites, simply visit the following URL: [Click Here to visit site](https://prolio.netlify.app)
 
 On the website, you will find a collection of small web development projects showcased in a visually appealing format. Each project includes buttons to view the live website and view the source code.
 
