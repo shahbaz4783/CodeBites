@@ -5,18 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
 
+      #navigation{
+        display: flex;
+        background-color: green;
+        height: 50px;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+
+      ul{
+        display: flex;
+        list-style: none;
+        gap: 30px;
+      }
     </style>
 </head>
 <body>
+  <header id="navigation">
     <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
 
-      <script src="/sildeCarousel/navbar.js"></script>
+      <div class="buttons">
+        <button>Login</button>
+        <button>Sign Up</button>
+      </div>
+  </header>
+
 </body>
 </html>
