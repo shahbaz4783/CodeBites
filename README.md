@@ -1,10 +1,10 @@
-# CodeBites
+# techFolio
 
-CodeBites is a curated collection of small web development projects designed to inspire and educate developers of all levels. This platform serves as a hub for showcasing bite-sized coding examples and mini projects.
+Techfolio is a curated collection web development projects designed to inspire and educate developers of all levels. This platform serves as a hub for showcasing coding examples and web projects.
 
 ## Features
 
-- **Project Showcase**: Explore a wide range of small web development projects, each presented in a visually appealing format.
+- **Project Showcase**: Explore a wide range of web development projects, each presented in a visually appealing format.
 - **View Website**: Easily access live demos of each project to see them in action.
 - **View Code**: Dive into the source code of each project to understand how it was built and explore different coding techniques.
 - **Search and Filter**: Find specific projects or narrow down the selection based on tags, categories, or technologies used.
@@ -12,7 +12,7 @@ CodeBites is a curated collection of small web development projects designed to 
 
 ## Getting Started
 
-To access and explore CodeBites, simply visit the following URL: [Click Here to visit site](https://codebites.netlify.app)
+To access and explore CodeBites, simply visit the following URL: [Click Here to visit site](https://techfolio.netlify.app)
 
 On the website, you will find a collection of small web development projects showcased in a visually appealing format. Each project includes buttons to view the live website and view the source code.
 
