@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Log In | Little Learners</title>
+		<link rel="stylesheet" href="./login.css" />
+	</head>
+	<body>
+		<form id="myForm">
+			<label for="email" class="label">Email</label>
+			<br />
+			<input type="email" id="email" placeholder="Enter your email" />
+			<br />
+			<label for="password" class="label">Password</label>
+			<br />
+			<input type="password" id="password" placeholder="Enter your password" />
+			<br />
+			<div id="notify">
+				<p>Not a member?</p>
+				<a href="./signup.html">Sign-up now</a>
+			</div>
+			<input type="submit" value="Log in" id="loginBtn" />
+		</form>
+
+		<script>
+			let form = document.querySelector('#myForm');
+			let email = document.querySelector('#email');
+			let password = document.querySelector('#password');
+
+			let LSData = JSON.parse(localStorage.getItem('sign-up')) || [];
+
+			form.addEventListener('submit', function (event) {
+				event.preventDefault();
+
+				let flag = false;
+				let tempToken = Math.floor(Math.random() * 10000);
+
+				for (let i = 0; i < LSData.length; i++) {
+					if (
+						LSData[i].email === email.value &&
+						LSData[i].password === password.value
+					) {
+						flag = true;
+						break;
+					}
+				}
+
+				if (flag === true) {
+					alert('Logged in');
+					localStorage.setItem('token', JSON.stringify (tempToken));
+					window.location.href = '/authentix/index.html';
+				} else {
+					alert('Incorrect email or password');
+				}
+			});
+		</script>
+	</body>
+</html>

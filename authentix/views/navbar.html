@@ -1,65 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+			}
 
+			#navigation {
+				display: flex;
+				background-color: #118ab2;
+				height: 50px;
+				justify-content: space-between;
+				align-items: center;
+			}
 
+			ul {
+				display: flex;
+				list-style: none;
+				gap: 30px;
+			}
+
+			ul a {
+				text-decoration: none;
+				color: #073b4c;
+			}
+
+			#join a {
+				padding: 10px;
+				width: 120px;
+				height: 30px;
+				border: 2px solid black;
+				color: rgb(232, 119, 119);
+				text-decoration: none;
+				background-color: aqua;
+			}
+
+			#profile {
+				display: flex;
+				align-items: center;
+				gap: 10px;
+				color: #fff;
+			}
+
+      #profile li{
+       list-style: none;
+       cursor: pointer;
       }
 
-      #navigation{
-        display: flex;
-        background-color: #118AB2;
-        height: 50px;
-        justify-content: space-between;
-        align-items: center;
-      }
+		</style>
+	</head>
+	<body>
+		<header id="navigation">
+			<nav>
+				<ul>
+					<li><a href="/authentix/index.html">Home</a></li>
+					<li><a href="/authentix/public/html/services.html">Services</a></li>
+					<li><a href="/authentix/public/html/about.html">About</a></li>
+					<li><a href="/authentix/public/html/contact.html">Contact</a></li>
+				</ul>
+			</nav>
 
-      ul{
-        display: flex;
-        list-style: none;
-        gap: 30px;
-      }
+			<!-- <div id="join">
+				<a href="/authentix/public/html/signup.html">Sign Up</a>
+				<a href="/authentix/public/html/login.html">Login</a>
+			</div>
 
-      ul a{
-        text-decoration: none;
-        color: #073B4C;
-      }
+			<div id="profile">
+        <li>profile</li>
+				<li id="logout">Logout</li>
+			</div> -->
+		</header>
+
+
+    
+    <script>
+      const token = localStorage.getItem('token');
+      const getJoin = document.querySelector('#join');
+      const getProfile = document.querySelector('#profile');
+      const getNav = document.querySelector('#navigation');
       
-      .join a{
-        padding: 10px;
-        width: 120px;
-        height: 30px;
-        border: 2px solid black;
-        color: rgb(232, 119, 119);
-        text-decoration: none;
-        background-color: aqua;
+        // getJoin.style.display = 'none';
+        // getProfile.style.display = 'flex';
+        console.log(token.length);
         
-      }
+        const login = document.createElement('p').innerText = 'LogIn'
+        getNav.append(login)
+      
+        
+      </script>
 
-
-    </style>
-</head>
-<body>
-  <header id="navigation">
-    <nav>
-        <ul>
-          <li><a href="/authentix/index.html">Home</a></li>
-          <li><a href="/authentix/public/html/services.html">Services</a></li>
-          <li><a href="/authentix/public/html/about.html">About</a></li>
-          <li><a href="/authentix/public/html/contact.html">Contact</a></li>
-        </ul>
-      </nav>
-
-      <div class="join">
-        <a href="/authentix/public/html/login-signup.html">Join Now</a>
-      </div>
-  </header>
-
-</body>
+<script src="/authentix/views/template.js"></script>
+	</body>
 </html>
