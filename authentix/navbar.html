@@ -8,13 +8,15 @@
       * {
         margin: 0;
         padding: 0;
+
+
       }
 
       #navigation{
         display: flex;
-        background-color: green;
+        background-color: #118AB2;
         height: 50px;
-        justify-content: space-evenly;
+        justify-content: space-between;
         align-items: center;
       }
 
@@ -23,6 +25,18 @@
         list-style: none;
         gap: 30px;
       }
+
+      ul a{
+        text-decoration: none;
+        color: #073B4C;
+      }
+      
+      button{
+        width: 120px;
+        height: 30px;
+      }
+
+
     </style>
 </head>
 <body>
@@ -37,8 +51,12 @@
       </nav>
 
       <div class="buttons">
-        <button>Login</button>
-        <button>Sign Up</button>
+        <!-- <button id="login">Login</button>
+        <button id="signup">Sign Up</button> -->
+        <!-- <a href="/authentix/login-signup.html">Login</a>
+        <a href="/authentix/login-signup.html">SignUp</a> -->
+        <button id="loginToggle">Login</button>
+				<button id="signupToggle">Signup</button>
       </div>
   </header>
 
