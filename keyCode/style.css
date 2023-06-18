@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: grid;
+    grid-template-areas: 
+    'one one'
+    'two three';
+    height: 90vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    text-align: center;
+    font-size: 3rem;
+    margin: 20px;
+  }
+  
+
+#box-1{
+    grid-area: one;
+}
+
+#box-2{
+    grid-area: two;
+}
+
+#box-3{
+    grid-area: three;
+}
