@@ -61,9 +61,6 @@ header h3 {
     perspective: 1000px;
     font-family: 'Open Sans', sans-serif;
 
-
-
-
   }
   
   .title {
@@ -184,3 +181,23 @@ header h3 {
     transition: .3s transform linear, .3s height linear .5s;
   }
   
+
+
+
+  /* Media */
+  @media only screen and (max-width: 768px) {
+
+    .project-list{
+      display: grid;
+      gap: 30px;
+      grid-template-columns: repeat(2, 1fr);
+      place-items: center;
+      margin-top: 10px;
+  }
+
+  .card {
+    width: 90%;
+    height: 30vh;
+  }
+
+  }
