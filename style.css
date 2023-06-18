@@ -201,3 +201,17 @@ header h3 {
   }
 
   }
+
+  @media only screen and (min-width:769px) and (max-width: 1410px) {
+    .project-list{
+      grid-template-columns: repeat(3, 1fr);
+      display: grid;
+      gap: 30px;
+      place-items: center;
+      margin-top: 10px;
+    }
+    .card {
+      width: 90%;
+      height: 35vh;
+    }
+  }

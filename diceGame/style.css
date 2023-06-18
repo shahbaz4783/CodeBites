@@ -58,8 +58,7 @@ img {
 }
 
 .btn:hover{
-  background-color: rgb(3, 124, 142);
+  background-color: #1ea2b6;
   transition: all 0.2s ease-in;
-
+  transform: scale(1.1);
 }
-
