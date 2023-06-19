@@ -43,7 +43,7 @@ header {
 
 #logo a {
 	text-decoration: none;
-	font-size: 2.5rem;
+	font-size: 1.5rem;
 	color: white;
 	font-family: 'Montserrat', sans-serif;
   font-weight: bold;
@@ -74,7 +74,7 @@ nav a {
 }
 
 nav a:hover {
-	transition: all 0.5s ease-in;
+	transition: all 0.5s ease-in-out;
 	background-color: #50bff7;
 }
 
