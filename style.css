@@ -112,7 +112,7 @@ header h3 {
 }
 
 .input:hover {
-	border: 2px solid rgba(254, 5, 5, 0.16);
+	border: 2px solid #FAFAFA;
 }
 
 .input:focus {
@@ -196,7 +196,14 @@ header h3 {
 }
 
 .card-front p:nth-child(2) {
-	color: #fafafa;
+	color: #00D9C0;
+  background-color: #03045E;
+  border-radius: 14px;
+  margin: 12px;
+  padding: 10px;
+  height: 25%;
+  display: flex;
+align-items: center;
 }
 
 .card-back {
@@ -272,6 +279,24 @@ header h3 {
 	transition: 0.3s transform linear, 0.3s height linear 0.5s;
 }
 
+/* animation */
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+
 /* Media */
 @media only screen and (max-width: 768px) {
 	.project-list {
@@ -290,6 +315,12 @@ header h3 {
   nav{
     display: none;
   }
+
+  .card-front p:nth-child(2) {
+    margin: 12px;
+    padding: 10px;
+    height: 40%;
+  }
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1410px) {
@@ -305,4 +336,12 @@ header h3 {
 		width: 70%;
 		height: 35vh;
 	}
+
+  .card-front p:nth-child(2) {
+    margin: 12px;
+    padding: 10px;
+    height: 35%;
+  }
 }
+
+
