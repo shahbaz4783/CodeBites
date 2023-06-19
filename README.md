@@ -1,4 +1,4 @@
-# techFolio
+# prolio
 
 Techfolio is a curated collection web development projects designed to inspire and educate developers of all levels. This platform serves as a hub for showcasing coding examples and web projects.
 
