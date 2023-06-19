@@ -12,7 +12,7 @@ const searchResult = () => {
       
         if (cardTitle.includes(searchTerm) || cardDescription.includes(searchTerm) || cardBackDescription.includes(searchTerm) || cardShortDescription.includes(searchTerm)) {
             card.classList.add('fade-in');
-            card.style.display = 'block';
+            card.style.display = 'flex';
         } else {
             card.style.display = 'none';
         }

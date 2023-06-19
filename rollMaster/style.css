@@ -1,6 +1,50 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&family=Ubuntu&display=swap');
 
+#set-username{
+  height: 95vh;
+  display: flex;
+}
+
+.set-name{
+
+  height: 60vh;
+  width: 60vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  background-color: #1ea2b6;
+  flex-direction: column;
+}
+
+#user-input{
+  padding: 15px;
+  font-size: 1.8rem;
+  margin: 20px;
+  border: none;
+  border-radius: 10px;
+  background-color: #FFFFF3;
+}
+
+#username-submit{
+  padding: 15px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  width: 20%;
+  background-color: #03045E;
+  color: #FFFFF3;
+  font-weight: bolder;
+  font-size: 1.5rem;
+}
+
+#username-submit:hover{
+  transform: scale(1.1);
+  transition: all 0.6s ease-in-out;
+}
+
 .container {
+  display: flex;
   width: 70%;
   margin: auto;
   text-align: center;
@@ -35,7 +79,7 @@ img {
 }
 
 .result {
-  font-size: 50px;
+  font-size: 2rem;
   margin: 40px;
   color: #EEEEEE;
   text-align: center;
@@ -45,20 +89,29 @@ img {
 
 .btn{
   display: block;
-  width: 180px;
-  height: 60px;
+  width: 30%;
+  height: fit-content;
   color: white;
   margin: 20px auto;
   cursor: pointer;
   font-family: 'Roboto', sans-serif;
   font-size: 30px;
-  border-radius: 20px;
+  border-radius: 10px;
   background-color: transparent;
   border: 2px solid white;
+  padding: 15px;
 }
 
 .btn:hover{
   background-color: #1ea2b6;
   transition: all 0.2s ease-in;
   transform: scale(1.1);
+}
+
+
+@media only screen and (max-width: 768px){
+  .container{
+    display: flex;
+    flex-direction: column;
+  }
 }
