@@ -1,15 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<header>
+			<h1>QuickList</h1>
+		</header>
 
-    Shopping List
+		<main>
+			<input type="text" name="items" id="input-item" placeholder="Add items" />
+			<button id="add-item">Add Item</button>
+			<input type="search" id="search-bar" class="input input-all" placeholder="Search Items" />
+		</main>
 
-    <script src="/tempSync/script.js"></script>
-</body>
+		<section>
+
+            <div id="clear-all" class="clearBtn"> Clear All</div>
+		</section>
+
+		<script src="/quickList/script.js"></script>
+	</body>
 </html>
