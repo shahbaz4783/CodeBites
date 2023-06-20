@@ -1,11 +1,13 @@
 const getInputField = document.getElementById('input-item');
 const getAddBtn = document.getElementById('add-item');
 const getSearchBar = document.getElementById('search-bar');
+const getSearchTab = document.querySelector('.search-group');
 const getClearAllBtn = document.getElementById('clear-all');
 const getSection = document.querySelector('section');
 
 getClearAllBtn.style.display = 'none';
-getSearchBar.style.display = 'none';
+getSearchTab.style.display = 'none';
+getSection.style.display = 'none';
 
 const addItem = () => {
     if (getInputField.value === ''){
@@ -26,8 +28,10 @@ const addItem = () => {
         remove.className = 'removeBtn'
         listBox.append(remove);
         
+        getSection.style.display = 'flex';
         getClearAllBtn.style.display = 'block';
-        getSearchBar.style.display = 'block';
+        getSearchTab.style.display = 'block';
+
 
         remove.addEventListener('click', () => {
             listBox.remove();

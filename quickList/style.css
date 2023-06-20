@@ -1,16 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Open+Sans&family=Roboto:wght@300&family=Source+Code+Pro&display=swap');
+
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: 'Source Code Pro', monospace;
+    font-family: 'Montserrat', sans-serif;
+
 }
 
 header {
-    height: 80px;
+    height: auto;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    background-color: #FFFFF3;
+    border-bottom: 2px solid black;
+    box-shadow: 2px 2px 2px #FFFFF3;
+    padding: 20px;
 }
+
+header h1 {
+    font-family: 'Montserrat', sans-serif;
+}
+
 
 main {
     width:fit-content;
@@ -36,18 +50,19 @@ main {
 
 .submit-button {
   font-size: 17px;
-  padding: 0.5em 2em;
+  padding: 10px;
   border: transparent;
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24);
-  background: #2E2E2E;
+  background: #03045E;
   border-radius: 0 10px 10px 0;
   transition: 0.3s;
+  color: #FAFAFA;
 }
 
 .submit-button:hover {
   transition: 0.3s;
-  background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
   cursor: pointer;
+  color: white;
 }
 
 .submit-button:active {
@@ -57,79 +72,58 @@ main {
 .submit-button span {
   font-weight: 800;
   letter-spacing: 2px;
-  background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   transition: 0.3s;
 }
 
 .submit-button:hover span {
   background: #2E2E2E;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   transition: 0.3s;
 }
 
 #input-item {
-  background-color: #2E2E2E;
   border-radius: 10px 0 0 10px;
   border: none;
-  padding: 20px;
-  color: white;
+  padding:  15px;
+  color: #03045E;
   font-size: 1.5rem;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: 'Source Code Pro', monospace;
+  border: 2px solid #03045E;
+
 }
 
 ::placeholder {
-  color: rgb(184, 184, 184);
+  color: #03045E;
 }
 
 
 /* Search Bar */
 
 .search-group {
-  display: flex;
-  line-height: 28px;
-  align-items: center;
-  position: relative;
-  max-width: auto;
+  border: 2px solid black;
 }
 
 #search-bar {
   height: 40px;
   line-height: 28px;
-  padding: 0 1rem;
-  width: 100%;
-  padding-left: 2.5rem;
-  border: 2px solid transparent;
-  border-radius: 8px;
-  outline: none;
-  background-color: #D9E8D8;
+  border: transparent;
+  background-color: #FAFAFA;
   color: #0d0c22;
-  box-shadow: 0 0 5px #C1D9BF, 0 0 0 10px #f5f5f5eb;
   transition: .3s ease;
+  padding: 10px;
 }
 
 #search-bar::placeholder {
   color: #777;
 }
 
-.icon {
-  position: absolute;
-  left: 1rem;
-  fill: #777;
-  width: 1rem;
-  height: 1rem;
-}
-
 
 /* Clear Button */
 
 .clearBtn {
-  color: purple;
+  color: #03045E;
   text-transform: uppercase;
   text-decoration: none;
-  border: 2px solid purple;
+  border: 2px solid #03045E;
   padding: 10px 20px;
   font-size: 17px;
   font-weight: bold;
@@ -152,7 +146,7 @@ main {
   top: 0;
   left: -40px;
   transform: skewX(45deg);
-  background-color: purple;
+  background-color: #03045E;
   z-index: -1;
   transition: all 1s;
 }
@@ -168,21 +162,26 @@ section {
     width:60vw;
     margin: 20px auto;
     height: fit-content;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #00D9C0;
+    border-radius: 20px;
+    padding: 20px;
+    column-gap: auto;
 }
 
-
 .box {
-    border: 2px solid gray;
     margin: 15px auto;
     padding: 10px;
-    width: 80%;
+    /* width: 80%; */
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     overflow: auto;
     border-radius: 10px;
     background-color: aliceblue;
+    max-width: 100%;
+    gap: 100px;
+    border: 2px solid #030301;
 }
 
 .item{
@@ -219,7 +218,7 @@ section {
 
 .removeBtn:hover {
   transition: all 0.3s ease-in-out;
-  background-color: rgb(255, 69, 69);
+  background-color: #FF4365;
   align-items: center;
 }
 
@@ -227,6 +226,20 @@ section {
 @media screen and (max-width: 768px) {
     section {
         width:90vw;
-        grid-template-columns: repeat(1, 1fr);
     }
+
+.box {
+  justify-content: space-between;
+  width: 100%;
+}
+
+#input-item {
+  width: 60vw;
+}
+
+header{
+  flex-direction: column;
+  gap: 20px;
+}
+
 }
