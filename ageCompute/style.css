@@ -56,3 +56,24 @@ label {
     height: 30px;
     margin: auto;
 }
+
+
+@media screen and (max-width: 768px) {
+
+    .container {
+        width: 80vw;
+        height: 50vh;
+
+    }
+
+    .form {
+        padding: 0;
+        margin: 0;
+    }
+
+    #result{
+        font-size: 1.5rem;
+    }
+
+
+}
