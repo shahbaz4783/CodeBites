@@ -11,15 +11,22 @@
 			<h1>QuickList</h1>
 		</header>
 
-		<main>
-			<input type="text" name="items" id="input-item" placeholder="Add items" />
-			<button id="add-item">Add Item</button>
-			<input type="search" id="search-bar" class="input input-all" placeholder="Search Items" />
+		<main>			
+			<div class="input-group">
+				<input placeholder="Add new item" type="text" id="input-item">
+				<button class="submit-button" id="add-item"><span>ADD</span></button>
+			</div>
+
+			<div class="search-group">
+				<input placeholder="Search" type="search" id="search-bar" >
+			</div>
+
+			<button class="btn clearBtn" id="clear-all">
+				<p class="paragraph"> Clear All </p>
+			</button>
 		</main>
 
 		<section>
-
-            <div id="clear-all" class="clearBtn"> Clear All</div>
 		</section>
 
 		<script src="/quickList/script.js"></script>
