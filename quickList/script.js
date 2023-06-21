@@ -59,11 +59,12 @@ const addItem = () => {
 			listBox.remove();
 			removeItemFromLocalStorage(item);
 
-			if (getSection.children.length === 0) {
-				getSection.style.display = 'none';
-				getSearchTab.style.display = 'none';
-				getClearAllBtn.style.display = 'none';
-			}
+			getSection.style.display =
+				getSection.children.length === 0 ? 'none' : 'flex';
+			getSearchTab.style.display =
+				getSection.children.length === 0 ? 'none' : 'block';
+			getClearAllBtn.style.display =
+				getSection.children.length === 0 ? 'none' : 'block';
 		});
 	}
 };
