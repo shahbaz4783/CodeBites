@@ -60,12 +60,23 @@ const resetUI = () => {
 
 
 // Search Items
-const findItems = () => {
+const findItems = (e) => {
+    const getItemBox = document.querySelectorAll('.box');
+    const inputText = e.target.value.toLowerCase();
 
-}
+    getItemBox.forEach((item) => {
+        const getText = item.firstChild.textContent.toLowerCase();
 
+        if (getText.includes(inputText)) {
+            item.style.display = 'flex';
+
+        } else {
+            item.style.display = 'none';
+        }
+    });
+};
 
 
 getAddBtn.addEventListener('click', addItem);
 getClearAllBtn.addEventListener('click', resetUI);
-getSearchBar.addEventListener('click', findItems)
+getSearchBar.addEventListener('input', findItems)
