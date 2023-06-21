@@ -36,15 +36,15 @@ const calculateAge = () => {
     let ageString = `You are`;
 
     if (years > 0) {
-      ageString += ` ${years} ${years === 1 ? 'year' : 'years,'}`;
+      ageString += ` ${years} ${years === 1 ? 'year,' : 'years,'}`;
     }
 
     if (months > 0) {
-      ageString += ` ${months} ${months === 1 ? 'month' : 'months'}`;
+      ageString += ` ${months} ${months === 1 ? 'month,' : 'months,'}`;
     }
 
     if (days > 0) {
-      ageString += ` and ${days} ${days === 1 ? 'day' : 'days'} old`;
+      ageString += ` ${days} ${days === 1 ? 'day' : 'days'} old`;
     }
 
     if (years === 0 && months === 0 && days === 0) {
