@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabbed</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon"
+        href="https://images.unsplash.com/photo-1579547079119-eff4751efb7f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+        type="favicon">
+        <link rel="stylesheet" href="/tabify/style.css">
+</head>
+
+<body>
+    <section id="tabbed-interface">
+        <h1>Web Development</h1>
+        <!-- Create the tab content -->
+        <div class="tab-content active" id="tab-1">
+            <div>
+                <img class="content-img" src="https://images.unsplash.com/photo-1621839673705-6617adf9e890?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2832&q=80" alt="Web Development Image 1">
+            </div>
+            <div class="text">
+                <h2>HTML Basics</h2>
+                <p>Learn the fundamentals of HTML, the standard markup language for creating web pages. Explore the
+                    structure
+                    and
+                    elements of HTML and discover how to create headings, paragraphs, lists, links, and more.</p>
+            </div>
+        </div>
+    
+        <div class="tab-content" id="tab-2">
+            <div>
+                <img class="content-img" src="https://colorlib.com/wp/wp-content/uploads/sites/2/creative-css3-tutorials.jpg" alt="Web Development Image 2">
+            </div>
+            <div class="text">
+                <h2>CSS Styling</h2>
+                <p>Dive into CSS and learn how to style your web pages. Discover selectors, properties, values, and
+                    techniques
+                    to
+                    customize the appearance of HTML elements and create visually appealing websites.</p>
+            </div>
+        </div>
+    
+        <div class="tab-content" id="tab-3">
+            <div>
+                <img class="content-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/800px-JavaScript-logo.png" alt="Web Development Image 3">
+            </div>
+            <div class="text">
+                <h2>JavaScript Fundamentals</h2>
+                <p>Get started with JavaScript, the programming language of the web. Explore variables, data types,
+                    functions,
+                    control structures, and more, and learn how to add interactivity and dynamic behavior to your web
+                    pages.</p>
+            </div>
+        </div>
+        <!-- Create the tabs -->
+        <ul class="tabs">
+            <li class="tab active" data-tab="tab-1">HTML</li>
+            <li class="tab" data-tab="tab-2">CSS</li>
+            <li class="tab" data-tab="tab-3">JavaScript</li>
+        </ul>
+    </section>
+    
+
+    <script src="/tabify/script.js"></script>
+</body>
+
+</html>

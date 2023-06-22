@@ -24,7 +24,7 @@ header {
 
 #logo {
 	display: flex;
-	gap: 8px;
+	gap: 5px;
 }
 
 .logo-icon {
@@ -46,7 +46,7 @@ header {
 	font-size: 1.5rem;
 	color: white;
 	font-family: 'Montserrat', sans-serif;
-  font-weight: bold;
+  	font-weight: bold;
 }
 
 #logo a:nth-child(2) {
@@ -54,6 +54,9 @@ header {
 	font-size: 2.5rem;
 	color: #03045e;
 	font-family: 'Montserrat', sans-serif;
+	display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 nav {
@@ -87,54 +90,54 @@ header h3 {
 /* search */
 
 .search-bar {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 35px;
-}
-
-.input {
-	max-width: 190px;
-	height: 100%;
-	outline: none;
-	font-size: 14px;
-	font-weight: 500;
-	background-color: transparent;
-	caret-color: #03045e;
-	color: #030301;
-	padding: 7px 10px;
-	border: 2px solid transparent;
-	border-top-left-radius: 7px;
-	border-bottom-left-radius: 7px;
-	margin-right: 1px;
-	transition: all 0.2s ease;
-  font-family: 'Source Code Pro', monospace;
-}
-
-.input:hover {
-	border: 2px solid #FAFAFA;
-}
-
-.input:focus {
-	border: 2px solid #03045e;
-}
-
-.search-btn {
+	position: relative;
+	--size-button: 40px;
+  }
+  
+  .input {
+	padding-left: var(--size-button);
+	height: var(--size-button);
+	font-size: 15px;
 	border: none;
+	color: #03045E;
+	outline: none;
+	width: var(--size-button);
+	transition: all ease 0.3s;
+	background-color: #50BFF7;
+	border-radius: 50px;
 	cursor: pointer;
-	background-color: rgba(42, 42, 45, 1);
-	border-top-right-radius: 7px;
-	border-bottom-right-radius: 7px;
-	height: 100%;
-	width: 30px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
+  }
 
-.search-btn:hover {
-	background-color: rgba(54, 54, 56, 1);
-}
+	::placeholder{
+	color: #4C4C4C;
+  }
+  
+  .input:focus,
+  .input:not(:invalid) {
+	width: 200px;
+	cursor: text;
+  }
+  
+  .input:focus + .icon,
+  .input:not(:invalid) + .icon {
+	pointer-events: all;
+	cursor: pointer;
+  }
+  
+  .search-bar .icon {
+	position: absolute;
+	width: var(--size-button);
+	height: var(--size-button);
+	top: 0;
+	left: 0;
+	padding: 8px;
+	pointer-events: none;
+  }
+  
+  .search-bar .icon svg {
+	width: 100%;
+	height: 100%;
+  }
 
 /* Project Section */
 
@@ -300,6 +303,19 @@ align-items: center;
 
 /* Media */
 @media only screen and (max-width: 768px) {
+
+	.logo-icon{
+
+		width: 1.5rem;
+    height: 1.5rem;
+	}
+	
+	#logo a:nth-child(2) {
+		font-size: 1.8rem;
+	}
+
+
+	
 	.project-list {
 		display: grid;
 		gap: 30px;
@@ -316,6 +332,13 @@ align-items: center;
   nav{
     display: none;
   }
+
+  #logo{
+	margin-left: 10px;
+	gap: 2px;
+
+  }
+
 
   .card-front p:nth-child(2) {
     margin: 12px;
