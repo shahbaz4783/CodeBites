@@ -12,13 +12,24 @@ const fetchUser = () => {
 	hideCard();
 	fetch('https://randomuser.me/api/')
 		.then((response) => {
+            if (!response.ok){
+                throw new Error('Failed to Fetch Request')
+            }
 			return response.json();
 		})
 		.then((data) => {
 			hideSpinner();
 			showCard();
 			displayUser(data.results[0]);
-		});
+		})
+        .catch((error) => {
+            hideCard();
+            const showError = document.querySelector('section');
+            showError.innerHTML = `<span id="errorText">${error}</span>`;
+            const errorText = document.getElementById('errorText');
+            errorText.style.cssText = 'color: red; font-size: 2rem; border: 2px solid black; padding: 10px; border-radius: 10px';
+          });
+          
 };
 
 const displayUser = (user) => {
