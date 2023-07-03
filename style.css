@@ -139,6 +139,44 @@ header h3 {
 	height: 100%;
   }
 
+
+  /* Sliding Carasoul */
+   .swiper {
+      width: 100%;
+      height: 100%;
+      background: #000;
+    }
+
+    .swiper-slide {
+      font-size: 18px;
+      color: #fff;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      padding: 40px 60px;
+    }
+
+    .swiper-slide .title {
+      font-size: 41px;
+      font-weight: 300;
+    }
+
+    .swiper-slide .subtitle {
+      font-size: 21px;
+    }
+
+    .swiper-slide .text {
+      font-size: 14px;
+      max-width: 400px;
+      line-height: 1.3;
+    }
+
+	.slider-btn{
+		color: white;
+		border: 2px solid gray;
+		text-decoration: none;
+	}
+
+
 /* Project Section */
 
 .project-list {
