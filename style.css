@@ -19,7 +19,6 @@ header {
 	align-items: center;
 	height: 65px;
 	background-color: #ffffff;
-	border-bottom: 1px solid gainsboro;
 }
 
 #logo {
@@ -144,12 +143,12 @@ header h3 {
    .swiper {
       width: 100%;
       height: 100%;
-      background: #000;
+      background: #50BFF7;
     }
 
     .swiper-slide {
       font-size: 18px;
-      color: #fff;
+      color: #000000;
       -webkit-box-sizing: border-box;
       box-sizing: border-box;
       padding: 40px 60px;
@@ -179,81 +178,65 @@ header h3 {
 
 /* Project Section */
 
-.project-list {
-	display: grid;
-	row-gap: 1.5rem;
-	grid-template-columns: repeat(5, 1fr);
-	place-items: center;
-	margin-top: 10px;
-}
-
 .card {
-	background-color: transparent;
-	width: 250px;
-	height: 300px;
-	perspective: 1000px;
-  font-family: 'Montserrat', sans-serif;
-}
-
-.title {
-	font-size: 1.5em;
-	font-weight: 900;
-	text-align: center;
-	margin: 0;
-  margin: 15px;
-  font-family: 'Source Code Pro', monospace;
-}
-
-.card-inner {
+	height: 254px;
+	width: 190px;
 	position: relative;
-	width: 100%;
+	transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+	border-radius: 16px;
+	box-shadow: 0 0 20px 8px #d0d0d0;
+	overflow: hidden;
+  }
+  
+   /*Image*/
+  .card-image {
 	height: 100%;
-	text-align: center;
-	transition: transform 0.8s;
-	transform-style: preserve-3d;
-}
-
-.card:hover .card-inner {
-	transform: rotateY(180deg);
-}
-
-.card-front,
-.card-back {
-	box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.2);
+	width: 100%;
 	position: absolute;
+	transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+	background: #0a3394;
+	background: linear-gradient(to top, #0a3394, #4286f4);
+  }
+  
+  /*Description */
+  .card-description {
 	display: flex;
+	position: absolute;
+	gap: .5em;
 	flex-direction: column;
-	justify-content: center;
-	width: 100%;
-	height: 100%;
-	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
-	border: 1px solid #03045e;
-	border-radius: 1rem;
-}
+	background-color: #f5f5f5;
+	color: #212121;
+	height: 70%;
+	bottom: 0;
+	border-radius: 16px;
+	transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+	padding: 1rem;
+  }
+  
+  /*Text*/
+  .text-title {
+	font-size: 1.3rem;
+	font-weight: 700;
+  }
+  
+  .text-body {
+	font-size: 1rem;
+	line-height: 130%;
+  }
+  
+  
+  /* Hover states */
+  .card:hover .card-description {
+	transform: translateY(100%);
+  }
+  
+  
 
-.card-front {
-	background: linear-gradient(120deg, #50bff7 88%, #caf0f8 40%, #03045e 48%);
-	color: #03045e;
-}
 
-.card-front p:nth-child(2) {
-	color: #FAFAFA;
-  background-color: #03045E;
-  border-radius: 14px;
-  margin: 12px;
-  padding: 10px;
-  height: 25%;
-  display: flex;
-align-items: center;
-}
+/* Cards */
 
-.card-back {
-	background: linear-gradient(120deg, #ff4365 88%, #caf0f8 40%, #00b4d8 78%);
-	color: #fffff3;
-	transform: rotateY(180deg);
-	display: flex;
-	gap: 10px;
+.mySwiper3{
+background-color: #FFFFF3;
 }
 
 .card-button {
@@ -321,7 +304,7 @@ align-items: center;
 	transition: 0.3s transform linear, 0.3s height linear 0.5s;
 }
 
-/* animation */
+/* Animations */
 
 @keyframes fadeIn {
   0% {
@@ -339,7 +322,7 @@ align-items: center;
 }
 
 
-/* Media */
+/* Media Queries */
 @media only screen and (max-width: 768px) {
 
 	.logo-icon{
@@ -353,20 +336,6 @@ align-items: center;
 	}
 
 
-	
-	.project-list {
-		display: grid;
-		gap: 30px;
-		grid-template-columns: repeat(2, 1fr);
-		place-items: center;
-		margin-top: 10px;
-	}
-
-	.card {
-		width: 90%;
-		height: 30vh;
-	}
-
   nav{
     display: none;
   }
@@ -377,33 +346,10 @@ align-items: center;
 
   }
 
-
-  .card-front p:nth-child(2) {
-    margin: 12px;
-    padding: 10px;
-    height: 40%;
-  }
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1410px) {
-	.project-list {
-		grid-template-columns: repeat(3, 1fr);
-		display: grid;
-		gap: 30px;
-		place-items: center;
-		margin-top: 10px;
-	}
 
-	.card {
-		width: 70%;
-		height: 35vh;
-	}
-
-  .card-front p:nth-child(2) {
-    margin: 12px;
-    padding: 10px;
-    height: 35%;
-  }
 }
 
 
