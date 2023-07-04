@@ -4,7 +4,7 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
 
-const marker = L.marker([0, 0]).addTo(map);
+const marker = L.marker([52, 1]).addTo(map);
 
 navigator.geolocation.getCurrentPosition(async (pos) => {
     const lat = pos.coords.latitude;
