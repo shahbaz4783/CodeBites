@@ -20,6 +20,19 @@ h1 {
     justify-content: center;
 }
 
+h2 {
+    text-align: center;
+    border: 2px solid black;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+}
+
 p {
     text-align: center;
+    font-size: 1.2rem;
+    padding: 30px;
 }
