@@ -6,7 +6,6 @@ rec.lang = 'en-US';
 rec.continuous = true;
 
 rec.onresult = (e) => {
-
     const colors = [
         'red',
         'blue',
@@ -17,19 +16,16 @@ rec.onresult = (e) => {
         'purple',
         'white',
         'gray'
-    ]
+    ];
 
-    for (let i = e.resultIndex; i<e.results.length; i++) {
+    const latestResult = e.results[e.results.length - 1][0].transcript.toLowerCase().trim();
+    document.querySelector('p').innerHTML = latestResult;
 
-        const script = e.results[i][0].transcript.toLowercase().trim();
-        document.querySelector('p').innerHTML = script;
-
-        if (colors.includes(script)){
-            document.style.backgroundColor = script;
-        } else {
-            alert('Please Say a Color Name')
-        }
+    if (colors.includes(latestResult)) {
+        document.body.style.backgroundColor = latestResult;
+    } else {
+        alert('Please say a color name.');
     }
-}
+};
 
 rec.start();
