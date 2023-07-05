@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Open+Sans&family=Roboto:wght@300&family=Source+Code+Pro&display=swap');
+
+/* CSS Reset */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #fffff3;
+  font-family: 'Source Code Pro', monospace;
+}
+
+h1 {
+    text-align: center;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+#text-input {
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+form div:nth-child(2){
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#voices{
+    width: 120px;
+}
+
+.btn {
+    margin: 20px auto;
+    width: 120px;
+    cursor: pointer;
+}
