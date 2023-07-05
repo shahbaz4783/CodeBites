@@ -28,7 +28,7 @@ form {
 }
 
 #text-input {
-    width: fit-content;
+    width: 90vw;
     display: flex;
     justify-content: center;
     margin: auto;
