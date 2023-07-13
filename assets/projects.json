@@ -77,6 +77,12 @@
             "code_url": "https://github.com/shahbaz4783/Flix-Pro"
 		},
 		{
+			"title": "SnapHunt",
+			"desc": "Browse all kinds of images and download them",
+            "web_url": "https://snaphunt.netlify.app/",
+            "code_url": "https://github.com/shahbaz4783/SnapHunt"
+		},
+		{
 			"title": "User Builder",
 			"desc": "Generate random user profiles instantly",
             "web_url": "/userBuilder/index.html",
