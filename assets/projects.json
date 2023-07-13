@@ -91,6 +91,12 @@
 	],
     "design": [
 		{
+			"title": "ProseLetter",
+			"desc": "A newsletter template",
+            "web_url": "https://proseletter.netlify.app",
+            "code_url": "https://github.com/shahbaz4783/ProseLetter"
+		},
+		{
 			"title": "Nexus Chain",
 			"desc": "Web3 landing page for token sale",
             "web_url": "https://nexuschain.netlify.app",
