@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Open+Sans&family=Roboto:wght@300&family=Source+Code+Pro&display=swap');
+
+/* CSS Reset */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #fffff3;
+  font-family: 'Source Code Pro', monospace;
+}
+
+h1 {
+    text-align: center;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.game-board{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    width: 50vw;
+    height: 50vh;
+    margin: auto;
+}
+
+.game-board div {
+    width: 100%;
+    background-color: aqua;
+}

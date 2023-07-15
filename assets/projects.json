@@ -7,6 +7,12 @@
             "code_url": "https://github.com/shahbaz4783/PowerPlay-Pro"
 		},
 		{
+			"title": "Tac Toe Royale",
+			"desc": "Classic tic tac toe game against computer",
+            "web_url": "/tacToeRoyale/index.html",
+            "code_url": "https://github.com/shahbaz4783/tacToeRoyale"
+		},
+		{
 			"title": "Snake Mania",
 			"desc": "Play Snake game and have some fun",
             "web_url": "https://snakemania.netlify.app",
