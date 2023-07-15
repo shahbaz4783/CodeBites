@@ -6,6 +6,7 @@ const result = document.querySelector('.result');
 const playBtn = document.querySelector('.playBtn');
 const playAgainBtn = document.querySelector('.playAgain');
 const exit = document.querySelector('.exit');
+const resultMsg = document.querySelector('.result-msg');
 
 // hide initial sections
 gameBoard.style.display = 'none';
@@ -46,25 +47,29 @@ const checkGameStatus = () => {
 		[2, 4, 6],
 	];
 
+	setTimeout(() => {
+		for (let combo of winningCombos) {
+			const [a, b, c] = combo;
+			if (
+				boardBox[a].innerHTML !== '' &&
+				boardBox[a].innerHTML === boardBox[b].innerHTML &&
+				boardBox[a].innerHTML === boardBox[c].innerHTML
+			) {
+				gameBoard.classList.add('blurBackground');
+				result.style.display = 'flex';
+				resultMsg.textContent = `${
+					boardBox[a].innerHTML == 'X' ? 'You Won!' : 'You Lost'
+				}`;
+				return;
+			}
+		}
 
-    setTimeout(() => {
-        // Check for a win
-        for (let combo of winningCombos) {
-            const [a, b, c] = combo;
-            if (boardBox[a].innerHTML !== '' && boardBox[a].innerHTML === boardBox[b].innerHTML && boardBox[a].innerHTML === boardBox[c].innerHTML) {
-                gameBoard.classList.add('blurBackground')
-                result.style.display = 'block';
-                result.querySelector('p').textContent = `${boardBox[a].innerHTML == 'X' ? 'You Won!' : 'You Lost'}`;
-                return;
-            }
-        }
-        // Check for a tie
-        if (Array.from(boardBox).every((box) => box.innerHTML !== '')) {
-            gameBoard.classList.add('blurBackground')
-            result.style.display = 'block';
-            result.querySelector('p').textContent = "It's a tie!";
-        }
-    }, 3000);
+		if (Array.from(boardBox).every((box) => box.innerHTML !== '')) {
+			gameBoard.classList.add('blurBackground');
+			result.style.display = 'flex';
+			resultMsg.textContent = "It's a tie!";
+		}
+	}, 3000);
 };
 
 const computerMove = () => {
@@ -79,15 +84,14 @@ const computerMove = () => {
 	}
 };
 
-
 playAgainBtn.addEventListener('click', () => {
-    boardBox.forEach((box) => {
-        box.innerHTML = '';
-    })
-    result.style.display = 'none';
-    gameBoard.classList.remove('blurBackground')
-})
+	boardBox.forEach((box) => {
+		box.innerHTML = '';
+	});
+	result.style.display = 'none';
+	gameBoard.classList.remove('blurBackground');
+});
 
 exit.addEventListener('click', () => {
-    window.location.href = 'https://prolio.netlify.app/';
-})
+	window.location.href = 'https://prolio.netlify.app/';
+});

@@ -87,7 +87,6 @@ body {
 	width: 50vw;
 	height: 35vh;
 	margin: auto;
-    flex-direction: row-reverse;
 	background: linear-gradient(
 		0deg,
 		rgba(34, 193, 195, 1) 0%,
@@ -100,7 +99,9 @@ body {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-   
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
   }
 
   .blurBackground {
@@ -138,6 +139,11 @@ body {
 
     .result{
         width: 90vw;
+        gap: 20px;
+    }
+
+    .result button {
+        width: 40%;
     }
 
 }
