@@ -27,6 +27,8 @@ boardBox.forEach((box) => {
 		if (box.innerHTML === '') {
 			box.innerHTML = currentPlayer;
 			currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
+            box.classList.add('x-col');
+
 			checkGameStatus();
 			setTimeout(() => {
 				computerMove();
@@ -88,8 +90,10 @@ playAgainBtn.addEventListener('click', () => {
 	boardBox.forEach((box) => {
 		box.innerHTML = '';
 	});
+
 	result.style.display = 'none';
 	gameBoard.classList.remove('blurBackground');
+
 });
 
 exit.addEventListener('click', () => {
