@@ -83,6 +83,12 @@
             "code_url": "https://github.com/shahbaz4783/Flix-Pro"
 		},
 		{
+			"title": "Tagline",
+			"desc": "A platform empowering free expression through text posts",
+            "web_url": "https://randomquotes-86uq.onrender.com",
+            "code_url": "https://github.com/shahbaz4783/randomIdeas"
+		},
+		{
 			"title": "SnapHunt",
 			"desc": "Browse all kinds of images and download them",
             "web_url": "https://snaphunt.netlify.app/",
