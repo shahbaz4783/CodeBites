@@ -27,6 +27,12 @@
 	],
 	"tools": [
 		{
+			"title": "NoteDownn",
+			"desc": "Take Notes in one place in organised way ",
+            "web_url": "https://notedownn.netlify.app/",
+            "code_url": "https://github.com/shahbaz4783/notedown"
+		},
+		{
 			"title": "Voiceify",
 			"desc": "Turn text into lifelike speech instantly",
             "web_url": "/voiceify/index.html",
