@@ -85,7 +85,7 @@
 		{
 			"title": "FlixPro",
 			"desc": "Get all Movies and Shows Details to binge",
-            "web_url": "https://flixpro.netlify.app/",
+            "web_url": "https://flixpro.vercel.app/",
             "code_url": "https://github.com/shahbaz4783/Flix-Pro"
 		},
 		{
